@@ -11,6 +11,8 @@ Core.Vehicle = {
       TriggerClientEvent('cd_garage:AddKeys', tonumber(p), plate)
     elseif Config.KeySystem == "okokGarage" then
       TriggerEvent('okokGarage:GiveKeys', plate, p)    
+    elseif Config.KeySystem == "vehicles_keys" then
+      exports["vehicles_keys"]:giveVehicleKeysToPlayerId(p, plate, "temporary")   
     end
   end,
 
