@@ -14,10 +14,10 @@ local SupportedResources = {
   },
   TargetSystem   = {'qtarget', 'qb-target', 'ox_target'},
   TimeSystem     = {'vSync', 'cd_easytime', 'qb-weathersync'},
-  JailSystem     = {'esx_jail', 'qb-prison'},
+  JailSystem     = {'esx_jail', 'qb-prison', 'rcore_prison'},
   ProgressBar    = {'progressbar', 'ox_lib', 'rprogress'},
   Framework      = {'vrp','es_extended', 'qb-core'},
-  KeySystem      = {'qb-vehiclekeys', 'cd_garage', 'okokGarage'},
+  KeySystem      = {'qb-vehiclekeys', 'cd_garage', 'okokGarage', 'vehicles_keys},
   DispatchSystem = {'ps-dispatch', 'cd_dispatch', 'qs-dispatch'},
   PhoneSystem    = {'qs-smartphone', 'gksphone', 'lb-phone', 'npwd', 'qb-phone'},
 }
