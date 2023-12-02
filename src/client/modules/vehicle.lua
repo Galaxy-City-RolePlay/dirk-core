@@ -12,6 +12,8 @@ Core.Vehicle = {
       TriggerEvent('cd_garage:AddKeys', plate)
     elseif Config.KeySystem == "okokGarage" then
       TriggerServerEvent('okokGarage:GiveKeys', plate)
+    elseif Config.KeySystem == "vehicles_keys" then
+      TriggerServerEvent("vehicles_keys:selfGiveVehicleKeys", plate)
     end
   end,
 
@@ -59,8 +61,9 @@ Core.Vehicle = {
       SetVehiclePetrolTankHealth(v, 1000)
       SetVehicleDirtLevel(v, 0)
       SetVehicleOilLevel(v, 100.0)
+      exports["qs-fuelstations"]:SetFuel(v, 100.0)
     else 
-      Core.UI.Notify("You are not in a vehicle")
+      Core.UI.Notify("Du sitzt in keinem Fahrzeug!")
     end
   end,
 
