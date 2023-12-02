@@ -1,22 +1,22 @@
 Config = {
-  UsingTarget         = true,     --## If you are using a target system then set this to true otherwise set to false and use my dirk-shn where possible ( not possible with every script ). 
+  UsingTarget         = false,     --## If you are using a target system then set this to true otherwise set to false and use my dirk-shn where possible ( not possible with every script ). 
   MenuMouseKey        = "LMENU",  --## Used to activate your mouse when close to my menu system prompts
   --## ITEM AUTO ADD
-  AutoAddItems        = true,     --## QBCore will automatically add these to the shared.lua if using an upto date version. ESX will add items to the table you configure below
+  AutoAddItems        = false,     --## QBCore will automatically add these to the shared.lua if using an upto date version. ESX will add items to the table you configure below
   ItemsDatabaseName   = "items",  --## ESX Users this will usually just be items its for autoadding items
   --## JOB EVENTS
-  PoliceJobs          = {police = true, lspd = true},
+  PoliceJobs          = {police = true, merryweather = true},
   --## LANGUAGE FOR SCRIPTS
-  Language            = "ENG",    --## "ENG", "ESP", "POR", "FRA", "NLD", "DAN", "SWE", "DEU", "ARA", "HIN"  --## SOME SCRIPTS MAY NOT HAVE TRANSLATIONS FOR ALL THESE LANGUAGES
+  Language            = "DEU",    --## "ENG", "ESP", "POR", "FRA", "NLD", "DAN", "SWE", "DEU", "ARA", "HIN"  --## SOME SCRIPTS MAY NOT HAVE TRANSLATIONS FOR ALL THESE LANGUAGES
   DrawDebug           = false,
   --## FRAMEWORK ACCOUNT SETTINGS
-  FrameworkAccounts   = {'cash','bank'},
+  FrameworkAccounts   = {'money','bank', 'black_money'},
 
   --## EVENT DEBUGGER
   EventDebugger       = false,    --## Used to debug events, will save a file so you can see most commonly spammed mass events in your server (mass being events sent to every client at once)
   ------------------------------------------------------------------------------------------------------------------------------------------------------------
   UsingClassicCommand = false,    --## If you want to use the old command /target
-  NewQSInventory      = false,    --## Had to add this because the name of the inventoryt is the same from v1-v2
+  NewQSInventory      = true,    --## Had to add this because the name of the inventoryt is the same from v1-v2
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
   Currency            = "$",      --## Currency symbol
 
@@ -61,9 +61,11 @@ Config = {
     KeySystem      = {
       ['qb-vehiclekeys'] = false,
       ['cd_garage']      = false,
+      ['vehicles_keys']      = false,
     },
     DispatchSystem = {
       ['ps-dispatch'] = false,
+      ['qs-dispatch'] = false,
       ['cd_dispatch'] = false,
     },
     PhoneSystem    = {
